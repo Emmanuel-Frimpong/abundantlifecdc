@@ -1,0 +1,68 @@
+.intro-title {
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+
+.img-cont {
+display: flex;
+justify-content: center;
+}
+
+.content .img {
+  width: 95vw;
+  min-height: 40vh;
+  margin: 0, auto;
+  border-radius: 7px;
+  margin-bottom: 12px;
+}
+
+.intro-cont::first-letter {
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro-cont a {
+  /* font-style: italic; */
+  text-decoration: none;
+  /* color: black;
+  font-weight: bold; */
+}
+
+.intro-to-sup {
+  font-size: 17px;
+  font-style: italic;
+}
+
+.supports {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  grid-auto-rows: 85px;
+  margin-top: 60px;
+  margin-bottom: 78px;
+}
+
+.sup-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sup-li img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sup-li p {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+

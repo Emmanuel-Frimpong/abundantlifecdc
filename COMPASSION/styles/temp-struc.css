@@ -1,0 +1,193 @@
+/* This is astylesheet for all webpages in this workbook */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(270deg,rgba(227, 230, 237, 0.95), rgba(254, 254, 255, 0.95)), url(/images/bag-img.jpg); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-hidden {
+  position: absolute;
+  transform: translateY(-100px);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0047AB;
+  padding: 7px;
+  height: 55px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 15px;
+}
+
+nav .logo {
+  width: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+  padding: 7px;
+  cursor: pointer;
+  margin-right: 65px;
+}
+
+nav .logo img {
+  width: 40px;
+}
+
+nav .logo p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 16px;
+  flex-shrink: 1;
+}
+
+@media (max-width: 447px) {
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transition: all 2s;
+}
+
+nav ul li i {
+  font-size: 22px;
+  padding-bottom: 3px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 470px) {
+  nav ul {
+    gap: 30px;
+  }
+}
+
+.content {
+  position: absolute;
+  margin-top: 65px;
+  width: 100%;
+}
+
+.sec1 {
+  padding: 9px;
+}
+
+.footer-sec {
+  background-color: #0047AB;
+  opacity: 90%;
+}
+
+.details {
+  padding: 5px 10px;
+}
+
+.main-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+}
+
+.head {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.loc-head, .off-head, .contact {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.loc {
+  margin-bottom: 8px;
+}
+
+.motto {
+  font-style: italic;
+}
+
+.logo-links img {
+  width: 70px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .main-details {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .logo-links img {
+    margin: 20px;
+    width: 90px;
+  }
+}
+
+.final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(18, 17, 17);
+  margin-bottom: 0;
+  padding: 4px;
+  font-size: 12.5px;
+}
+
+.dev {
+  margin-left: 230px;
+  font-size: 11px;
+}
+
+.dev a {
+  text-decoration: none;
+  color: rgb(203, 203, 203);
+  font-style: italic;
+}
